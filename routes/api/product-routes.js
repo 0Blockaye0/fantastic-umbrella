@@ -29,7 +29,7 @@ router.get("/", (req, res) => {
     });
 });
 
-// get one product
+// get one product **DONE
 router.get("/:id", (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
@@ -132,6 +132,7 @@ router.put("/:id", (req, res) => {
     });
 });
 
+// **NEED TO TEST
 router.delete("/:id", (req, res) => {
   // delete one product by its `id` value
   Product.destroy({
